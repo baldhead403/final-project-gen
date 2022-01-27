@@ -18,7 +18,7 @@ public class FantasticFootwearApplication {
 	{
 		FilterRegistrationBean<jwtFilter> registrationBean = new FilterRegistrationBean<>();
 		registrationBean.setFilter( new jwtFilter() );
-//		registrationBean.addUrlPatterns( "/api/*" );
+		registrationBean.addUrlPatterns( "/api/*" );
 		return registrationBean;
 	}
 
